@@ -1,0 +1,97 @@
+#page-search-results{
+    width: 90%;
+    max-width: 1100px;
+
+    /*Alinhamento de caixa (pelo lado de fora)*/
+    margin: 0 auto;     /*Em cima e em baixo é 0 e nas laterais é auto*/
+}
+
+#page-search-results header{
+    margin-top: 48px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-search-results a{
+    color: var(--title-color);
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+#page-search-results header a span{
+    margin-right: 15px;
+    background-image: url('../extras-aula-1/icones/arrow-left.svg');
+
+    display: flex;
+
+    width: 24px;        /*LARGURA*/
+    height: 24px;       /*ALTURA*/
+}
+
+body::after {       /*Cria um novo background em cima do principal*/
+    content: "";
+    position: fixed;
+    background-color:white;
+    top: 260px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+main {
+    margin: 48px;   
+}
+
+main h4 {
+    font-weight: normal;
+    font-family: Roboto, sans-serif;
+
+    margin-bottom: 32px;
+}
+
+main .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 24px;
+}
+
+main img {
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;      /*Altera a imagem conforme o tam da tela*/
+
+    border-radius: 8px 8px 0 0;
+}
+
+main .card h1 {
+    margin-top: 32px;
+
+    font-size: 36px;
+    line-height: 41px;
+    color: #322153;
+}
+
+main .card h3 {
+    margin: 24px 0;
+    font-family: Roboto;
+    font-style: normal;
+
+    font-size: 24px;
+    line-height: 34px;
+
+    color: var(--primary-color);    
+}
+
+main .card p {
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #6c6c80;
+}

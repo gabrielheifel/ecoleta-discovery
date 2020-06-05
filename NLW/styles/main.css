@@ -1,0 +1,38 @@
+:root{      /*Criar Variáveis para reutilizar no decorrer do codigo*/
+    --title-color: #322153;
+    --primary-color: #34cd79;
+}
+
+*{  /*Seta tudo*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     /*Deixa o preenchimento dentro da borda*/
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a{      /*Todos elementos 'a' que encontrar terao essa caracteristica*/
+    text-decoration: none;  /*Retira as linhas de baixo do link*/
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);
+}
+
+/*BOX MODEL
+
+Modelo de caixa
+Toda caixa tem 
+largura, altura, espaçamento, preenchimentos,
+bordas, cor, fundo, meneira que é vista pelo html(display),
+posicionamento, alinhamentos
+*/
+

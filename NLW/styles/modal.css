@@ -1,0 +1,95 @@
+#modal {
+    /*Em hedacimal, adicionar duas letras (a-f) para mudar a transparencia*/
+    background-color: #0e0a14ee;
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 400ms;
+}
+
+#modal.hide{
+    display: none;
+}
+
+#modal .content{
+    color: white;
+
+    width: 420px;
+}
+
+#modal .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 42px;
+}
+
+#modal .header a {
+    background-image: url(../extras-aula-1/icones/x.svg);
+
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+
+    /*'Fechar' fica muito pequeno porém não desaparece. Acessibilidade!*/
+    font-size: 0.01px;      
+}
+
+#modal .header h1{
+    color: white;
+
+    font-size: 36px;
+    line-height: 42px;    
+}
+
+#modal form label{
+    font-size: 18px;
+    line-height: 16px;
+
+    display: block;     /*Da liberdade pro lable*/
+    margin-bottom: 8px;
+}
+
+#modal form .field{
+    display: flex;      /*Encaixa o input com o button*/
+}
+
+#modal form input{  
+    flex: 1;            /*Encaixa o input e o button no tamanho do modal*/
+
+    background-color: #f0f0f5;
+
+    /*Sentido horário, top-left, top-right, botton-right, botton-left*/
+    border-radius: 8px 0 0 8px;     
+    border: 0;
+
+    padding: 16px 24px;
+
+    font-size: 16px;
+    color: #6c6c80;     /*Cor das letras dentro do input*/
+}
+
+#modal form button{
+    width: 72px;
+    height: 72px;
+
+    background-color: var(--primary-color);
+
+    border: 0;
+    border-radius: 0 8px 8px 0;
+}
+
+#modal form button:hover{
+    transition: 400ms;
+
+    background-color: #2fb85e;
+}

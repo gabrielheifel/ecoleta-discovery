@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gabrielheifel/NLW/issues"
   },
-  "homepage": "https://github.com/gabrielheifel/NLW#readme"
+  "homepage": "https://github.com/gabrielheifel/NLW#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
